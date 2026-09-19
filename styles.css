@@ -651,3 +651,102 @@
     outline:2px solid var(--teal);
     outline-offset:2px;
   }
+
+  /* ---------- MOBILE LAYOUT ---------- */
+  @media (max-width:640px){
+    nav.wrap{
+      height:auto;
+      min-height:70px;
+      padding-top:12px;
+      padding-bottom:10px;
+      flex-wrap:wrap;
+      gap:10px 12px;
+    }
+    .brand{
+      font-size:0.98rem;
+      gap:8px;
+    }
+    .brand-logo{
+      width:36px;
+      height:36px;
+      border-radius:9px;
+    }
+    .nav-cta{
+      padding:9px 13px;
+      font-size:0.78rem;
+      margin-left:auto;
+    }
+    .navlinks{
+      order:3;
+      width:100%;
+      gap:18px;
+      padding:2px 0 4px;
+      overflow-x:auto;
+      overscroll-behavior-x:contain;
+    }
+    .navlinks a{font-size:0.8rem;}
+    .hero .wrap{
+      padding-top:38px;
+      padding-bottom:44px;
+      gap:34px;
+    }
+    .hero h1{
+      font-size:clamp(2rem,11vw,2.75rem);
+      line-height:1.08;
+    }
+    .hero .role{
+      font-size:0.98rem;
+      line-height:1.45;
+    }
+    .hero .blurb{
+      font-size:0.94rem;
+      line-height:1.65;
+    }
+    .hero-photo{
+      max-width:190px;
+      padding:7px;
+    }
+    .hero-photo img{border-radius:10px;}
+    .stack-row{margin-top:24px;gap:8px;}
+    .stack-pill{
+      font-size:0.7rem;
+      padding:6px 11px;
+    }
+    .hero-ctas{
+      margin-top:28px;
+      gap:10px;
+      flex-direction:column;
+    }
+    .btn-primary,.btn-ghost{
+      width:100%;
+      padding:12px 18px;
+      text-align:center;
+    }
+    .band{height:42px;}
+    .section-head{
+      align-items:flex-start;
+      gap:16px;
+      margin-bottom:32px;
+    }
+    .section-head h2{font-size:1.75rem;}
+    .section-head p{font-size:0.9rem;}
+    .skill-col,.service-card{padding:24px 20px;}
+    .tl-item{padding-bottom:30px;}
+    .tl-content h3{font-size:1rem;line-height:1.4;}
+    .tl-content .co{font-size:0.82rem;line-height:1.45;}
+    .tl-list{
+      font-size:0.88rem;
+      line-height:1.55;
+      padding-left:16px;
+    }
+    .projects-grid{gap:18px;}
+    .project-body{padding:22px 20px 24px;}
+    .projects-note{padding:32px 20px;}
+    .stats-grid{gap:22px 16px;}
+    .stat .num{font-size:2rem;}
+    .stat .label{font-size:0.82rem;}
+    .stat .desc{font-size:0.78rem;}
+    .contact h2{font-size:2rem;}
+    .contact-email{font-size:0.9rem;}
+    footer{font-size:0.75rem;}
+  }
